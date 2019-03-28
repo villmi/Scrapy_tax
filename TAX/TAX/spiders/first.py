@@ -4,7 +4,7 @@ import json
 import random
 import time
 
-city_code = [13202, 13203, 13204, 13205, 13206, 13207, 13208, 13209, 13210, 13211, 13212, 13213, 13214, 13215,
+city_code = [13203, 13204, 13205, 13206, 13207, 13208, 13209, 13210, 13211, 13212, 13213, 13214, 13215,
              13216, 13217]
 # city_code = [13201]
 
@@ -40,7 +40,7 @@ class QuerySpider(scrapy.Spider):
         # for li in lis:
         #     print(li)
         # print(response.text)
-        r = random.randint(2, 5)
+        r = random.randint(5, 10)
         print("sleep %d seconds" % r)
         time.sleep(r)
         result = json.loads(response.text)
